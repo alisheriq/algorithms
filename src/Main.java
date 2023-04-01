@@ -21,9 +21,27 @@ public class Main {
         //int n = 5;
         //System.out.println(recur(n));
 
-        int n = 17;
-        System.out.println(fibonacci(n));
+        //5)
+        //int n = 17;
+        //System.out.println(fibonacci(n));
+
+        int a = 2;
+        int n = 10;
+        System.out.println(power(a, n));
     }
+
+    public static int power(int a, int n)
+    {
+        if(n == 1)
+        {
+            return a;
+        }
+        else
+        {
+            return(a * power(a,n-1));
+        }
+    }
+
     public static int fibonacci(int n)
     {
         if(n == 0 || n == 1)
