@@ -11,12 +11,27 @@ public class Main {
         //double avg = findAvg(arr, arr.length);
         //System.out.println("Average is "+ avg/arr.length);
 
-        int n = 10;
-        int check = n;
-        int count = 0;
-        System.out.println(checkComp(n,check,count));
+        //3)
+        //int n = 10;
+        //int check = n;
+        //int count = 0;
+        //System.out.println(checkComp(n,check,count));
+
+        int n = 5;
+        System.out.println(recur(n));
     }
 
+    public static int recur(int n)
+    {
+        if(n == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return(n * recur(n-1));
+        }
+    }
     public static String checkComp(int n,int check, int count)
     {
         if(check != 0)
