@@ -36,13 +36,31 @@ public class Main {
         //reverse(n);
         //input.close();
 
-        String s = "123a12";
-        char[] ch = new char[s.length()];
-        for (int i = 0; i < s.length(); i++)
+        //8)
+        //String s = "123a12";
+        //[] ch = new char[s.length()];
+        //for (int i = 0; i < s.length(); i++)
+        //{
+        //    ch[i] = s.charAt(i);
+        //}
+        //System.out.println(digits(ch, s.length() - 1));
+
+        int n = 7;
+        int k = 3;
+        System.out.println(binomialCoef(n,k));
+
+    }
+
+    public static int binomialCoef(int n, int k)
+    {
+        if(k == 0 || k == n)
         {
-            ch[i] = s.charAt(i);
+            return(1);
         }
-        System.out.println(digits(ch, s.length() - 1));
+        else
+        {
+            return (binomialCoef(n-1,k-1) + binomialCoef(n-1,k));
+        }
     }
 
     public static String digits(char[] a, int n)
