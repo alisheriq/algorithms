@@ -30,10 +30,35 @@ public class Main {
         //int n = 10;
         //System.out.println(power(a, n));
 
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        reverse(n);
-        input.close();
+        //7)
+        //Scanner input = new Scanner(System.in);
+        //int n = input.nextInt();
+        //reverse(n);
+        //input.close();
+
+        String s = "123a12";
+        char[] ch = new char[s.length()];
+        for (int i = 0; i < s.length(); i++)
+        {
+            ch[i] = s.charAt(i);
+        }
+        System.out.println(digits(ch, s.length() - 1));
+    }
+
+    public static String digits(char[] a, int n)
+    {
+        if(n >= 0)
+        {
+            if(a[n] >= 48 && a[n] <= 57)
+            {
+                return (digits(a, n - 1 ));
+            }
+            else
+            {
+                return("No");
+            }
+        }
+        return("Yes");
     }
 
     public static void reverse(int n)
