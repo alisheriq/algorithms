@@ -17,8 +17,23 @@ public class Main {
         //int count = 0;
         //System.out.println(checkComp(n,check,count));
 
-        int n = 5;
-        System.out.println(recur(n));
+        //4)
+        //int n = 5;
+        //System.out.println(recur(n));
+
+        int n = 17;
+        System.out.println(fibonacci(n));
+    }
+    public static int fibonacci(int n)
+    {
+        if(n == 0 || n == 1)
+        {
+            return n;
+        }
+        else
+        {
+            return(fibonacci(n - 1) + fibonacci(n - 2));
+        }
     }
 
     public static int recur(int n)
@@ -32,6 +47,7 @@ public class Main {
             return(n * recur(n-1));
         }
     }
+
     public static String checkComp(int n,int check, int count)
     {
         if(check != 0)
@@ -54,6 +70,7 @@ public class Main {
         }
         return checkComp(n, check - 1, count);
     }
+
     public static int findAvg(int arr[], int n)
     {
         if(n==1)
@@ -66,6 +83,7 @@ public class Main {
             return sum + arr[n-1];
         }
     }
+
     public static int findMin(int arr[], int n)
     {
         if(n==1)
@@ -78,7 +96,5 @@ public class Main {
             return Math.min(min, arr[n-1]);
         }
     }
-
-
 
 }
