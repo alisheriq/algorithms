@@ -45,10 +45,27 @@ public class Main {
         //}
         //System.out.println(digits(ch, s.length() - 1));
 
-        int n = 7;
-        int k = 3;
-        System.out.println(binomialCoef(n,k));
+        //9)
+        //int n = 7;
+        //int k = 3;
+        //System.out.println(binomialCoef(n,k));
 
+        //10)
+        int a = 48;
+        int b = 32;
+        System.out.println(greatCommonDivision(a,b));
+    }
+
+    public static int greatCommonDivision(int a, int b)
+    {
+        if(a % b == 0)
+        {
+            return (b);
+        }
+        else
+        {
+            return ( greatCommonDivision(b, a % b));
+        }
     }
 
     public static int binomialCoef(int n, int k)
