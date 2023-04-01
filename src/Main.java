@@ -25,9 +25,26 @@ public class Main {
         //int n = 17;
         //System.out.println(fibonacci(n));
 
-        int a = 2;
-        int n = 10;
-        System.out.println(power(a, n));
+        //6)
+        //int a = 2;
+        //int n = 10;
+        //System.out.println(power(a, n));
+
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        reverse(n);
+        input.close();
+    }
+
+    public static void reverse(int n)
+    {
+        Scanner input = new Scanner(System.in);
+        int result;
+        if(n == 0) return;
+        result = input.nextInt();
+        reverse(n-1);
+        System.out.print(result+" ");
+        input.close();
     }
 
     public static int power(int a, int n)
