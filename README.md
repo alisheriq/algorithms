@@ -1,4 +1,5 @@
-# Assignment 1 by Alisher Kulbossynov
+# Assigments by Alisher Kulbossynov
+# Course: Algorithms and Data Structures
 # Teacher: Nursultan Khaimuldin
 ---
 
@@ -12,6 +13,7 @@ IntelliJ IDEA
 ## Explanation of the Assignments
 <details>
 <summary>Assignment 1.</summary>
+---
 <details>
 <summary>Task 1.</summary>
 This task creates an array of integers and then calls a function called findMin to find the minimum value in that array. The findMin function is a recursive function that takes an array and the length of that array as inputs and returns the minimum value in the array.
