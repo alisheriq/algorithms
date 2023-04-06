@@ -9,7 +9,9 @@
 IntelliJ IDEA
 - I used v2022.3.1
 
-## Explanation
+## Explanation of the Assignments
+<details>
+<summary>Assignment 1.</summary>
 <details>
 <summary>Task 1.</summary>
 This task creates an array of integers and then calls a function called findMin to find the minimum value in that array. The findMin function is a recursive function that takes an array and the length of that array as inputs and returns the minimum value in the array.
@@ -58,6 +60,7 @@ This task finds the binomial coefficient (n choose k) by calling a function call
 <details>
 <summary>Task 10.</summary>
 Task 10 calculates the greatest common divisor (GCD) of two integers. The function takes two integer parameters, and uses recursion to calculate the GCD by using the modulo operator to find the remainder of the first integer divided by the second integer. The function returns the second integer if the remainder is zero, or recursively calls itself with the second integer as the first parameter and the remainder as the second parameter until the remainder is zero.
+</details>
 </details>
 
 ## Install
