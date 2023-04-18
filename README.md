@@ -47,12 +47,31 @@ indexOf(Object o): This method returns the index of the first occurrence of the 
 lastIndexOf(Object o): This method returns the index of the last occurrence of the specified object in the array. If the object is not found, it returns -1.
 
 sort(): This method sorts the elements in the array in ascending order using the bubble sort algorithm. The elements must be Comparable.
-</details>
+
 </details>
 
 <details>
 <summary>myLinkedList class</summary>
 MyLinkedList is a class that implements the MyList interface. The MyLinkedList class represents a singly linked list data structure that allows for fast adding and removing of elements.
+ <details>
+<summary>click</summary>
+public int size(): Returns an int representing the number of elements in the linked list.
+ 
+public void add(T item): Adds an element to the end of the list.
+ 
+public void add(T item, int index): Adds an element at the specified index.
+ 
+public T get(int index): Returns the element at the specified index in the list.
+ 
+public void remove(int index): Removes the element at the specified index from the list.
+ 
+public void checkIndex(int index): Throws an IndexOutOfBoundsException if the given index is out of range.
+ 
+public boolean contains(Object o): Finds the specified element in the linked list.
+ 
+public int indexOf(Object o): Returns the index of the first occurrence of the specified element in the list, or -1 if not found.
+ 
+public int lastIndexOf(Object o): Returns the index of the last occurrence of the specified element in the list, or -1 if not found.
 </details>
 </details>
 
