@@ -12,14 +12,10 @@ IntelliJ IDEA
 
 ## Explanation of the Assignments
 <details>
-<summary>click</summary>
----
-<details>
 <summary>myArrayList class</summary>
 The MyArrayList class is a generic class that implements the MyList interface. It represents a dynamic array that can hold objects of any type. 
 Here is a description of each method in the class:
-<details>
-<summary>click</summary>
+ 
 MyArrayList(): This is the constructor of the class. It creates a new MyArrayList object with an initial capacity of 5 elements.
 
 add(Object item): This method adds the specified item to the end of the array. If the array is full, the method calls increaseBuffer() to double its size.
@@ -53,8 +49,7 @@ sort(): This method sorts the elements in the array in ascending order using the
 <details>
 <summary>myLinkedList class</summary>
 MyLinkedList is a class that implements the MyList interface. The MyLinkedList class represents a singly linked list data structure that allows for fast adding and removing of elements.
- <details>
-<summary>click</summary>
+ 
 public int size(): Returns an int representing the number of elements in the linked list.
  
 public void add(T item): Adds an element to the end of the list.
@@ -72,7 +67,6 @@ public boolean contains(Object o): Finds the specified element in the linked lis
 public int indexOf(Object o): Returns the index of the first occurrence of the specified element in the list, or -1 if not found.
  
 public int lastIndexOf(Object o): Returns the index of the last occurrence of the specified element in the list, or -1 if not found.
-</details>
 </details>
 
 ## Install
